@@ -43,30 +43,30 @@ class ActionCreator {
         return new ActionEvent(this._constructType(GOTO), payload);
     }
 
-    getRequest(payload:Payload = null): ActionEvent {
+    request(payload:Payload = null): ActionEvent {
         return new ActionEvent(this._constructType(REQUEST), payload);
     }
 
-    getAttempt(payload:Payload = null): ActionEvent {
+    attempt(payload:Payload = null): ActionEvent {
         return new ActionEvent(this._constructType(ATTEMPT), payload);
     }
 
-    getSuccess(payload:Payload = null): ActionEvent {
+    success(payload:Payload = null): ActionEvent {
         return new ActionEvent(this._constructType(SUCCESS), payload);
     }
 
-    getFailure(payload:Payload = null): ActionEvent {
+    failure(payload:Payload = null): ActionEvent {
         return new ActionEvent(this._constructType(FAILURE), payload);
     }
 
-    getClientFailure(payload:Payload = null): ActionEvent {
+    clientFailure(payload:Payload = null): ActionEvent {
         return new ActionEvent(this._constructType(CLIENT_FAILURE), payload);
     }
-    getServerFailure(payload:Payload = null): ActionEvent {
+    serverFailure(payload:Payload = null): ActionEvent {
         return new ActionEvent(this._constructType(SERVER_FAILURE), payload);
     }
 
-    getCancel(payload:Payload = null): ActionEvent {
+    cancel(payload:Payload = null): ActionEvent {
         return new ActionEvent(this._constructType(CANCEL), payload);
     }
 
