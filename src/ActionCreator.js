@@ -81,19 +81,19 @@ class ActionCreator {
             case Types.GOTO:
                 return this.get;
             case Types.REQUEST:
-                return this.getRequest;
+                return this.request;
             case Types.ATTEMPT:
-                return this.getAttempt;
+                return this.attempt;
             case Types.SUCCESS:
-                return this.getSuccess;
+                return this.success;
             case Types.CANCEL:
-                return this.getCancel;
+                return this.cancel;
             case Types.FAILURE:
-                return this.getFailure;
+                return this.failure;
             case Types.CLIENT_FAILURE:
-                return this.getClientFailure;
+                return this.clientFailure;
             case Types.SERVER_FAILURE:
-                return this.getServerFailure;
+                return this.serverFailure;
         }
     }
 }
